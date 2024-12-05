@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>صيدلية د/ مصطفى صديق</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* تأثيرات الرسوم المتحركة */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .fade-in {
+      animation: fadeIn 1s ease-in-out forwards;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+  <!-- قسم العنوان الرئيسي -->
+  <header class="bg-blue-900 text-white">
+    <div class="container mx-auto px-4 py-12 flex flex-col md:flex-row items-center justify-between">
+      <div class="md:w-1/2 text-center md:text-right">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">صيدلية د/ مصطفى صديق</h1>
+        <p class="text-lg md:text-xl mb-6">نقدم خدمات طبية متميزة على مدار 24 ساعة لخدمة صحتكم.</p>
+        <button class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full shadow-md">تواصل معنا</button>
+      </div>
+      <div class="md:w-1/2">
+        <img src="/aa.png" alt="دكتور مصطفى" class="rounded-lg shadow-lg w-full object-cover fade-in w-[400px] h-[600px]">
+      </div>
+    </div>
+  </header>
+
+  <!-- قسم الخدمات -->
+  <section class="py-12">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8">خدماتنا</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- خدمة 24 ساعة -->
+        <div class="bg-white p-6 rounded-lg shadow-md transform hover:scale-105 transition duration-500 ease-in-out fade-in">
+          <div class="flex justify-center items-center text-blue-500 text-5xl mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-10a9 9 0 11-6-2.647" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-center mb-2">خدمة 24 ساعة</h3>
+          <p class="text-center">نحن دائماً هنا لخدمتكم وتقديم أفضل المنتجات الطبية والاستشارات.</p>
+        </div>
+        <!-- تحضير الوصفات الطبية -->
+        <div class="bg-white p-6 rounded-lg shadow-md transform hover:scale-105 transition duration-500 ease-in-out fade-in delay-[0.2s]">
+          <div class="flex justify-center items-center text-green-500 text-5xl mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 10h11m-4 10a9 9 0 100-18 9 9 0 000 18zm9-9l5 5m-5-5l5-5" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-center mb-2">تحضير الوصفات الطبية</h3>
+          <p class="text-center">تحضير دقيق وسريع للوصفات الطبية بواسطة صيادلة مرخصين.</p>
+        </div>
+        <!-- نصائح صحية -->
+        <div class="bg-white p-6 rounded-lg shadow-md transform hover:scale-105 transition duration-500 ease-in-out fade-in delay-[0.4s]">
+          <div class="flex justify-center items-center text-red-500 text-5xl mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M7 13l3 3 7-7m2 5a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-center mb-2">نصائح صحية</h3>
+          <p class="text-center">احصل على نصائح صحية مخصصة تناسب احتياجاتك ونمط حياتك.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+
+  <!-- قسم عن الصيدلية -->
+  <section class="bg-blue-50 py-12">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-2">
+      <div class="md:w-1/2 mb-8 md:mb-0 text-center md:text-right">
+        <h2 class="text-3xl font-bold mb-4">عن الصيدلية</h2>
+        <p class="text-lg text-gray-600 mb-6">في صيدلية د/ مصطفى صديق، نلتزم بتقديم أفضل خدمات الرعاية الصيدلانية للمجتمع. مع مجموعة واسعة من المنتجات والخدمات، نهدف إلى تلبية جميع احتياجاتكم الصحية.</p>
+        <button class="bg-blue-900 text-white px-6 py-3 rounded-full shadow-md">تعرف علينا</button>
+      </div>
+      <div class="w-full md:w-1/2">
+        <img src="/aa.webp" alt="عن الصيدلية" class="rounded-lg shadow-lg w-full fade-in w-full h-[300px] md:w-[600px] md:h-[600px] object-cover">
+      </div>
+    </div>
+  </section>
+
+  <!-- الفوتر -->
+  <footer class="bg-blue-900 text-white py-6">
+    <div class="container mx-auto px-4 text-center">
+      <p>&copy; 2024 صيدلية د/ مصطفى صديق. جميع الحقوق محفوظة.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
